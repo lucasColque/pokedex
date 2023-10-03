@@ -19,7 +19,7 @@ const Card = ({url}) => {
     return (
         <div className='pokemon'>
             <p className="pokemon-id-back">
-                {pokemon.id < 100 ? pokemon.id < 10 ? `#00${pokemon.id}` : `#0${pokemon.id}` : pokemon.id}
+                {pokemon.id < 100 ? pokemon.id < 10 ? `#00${pokemon.id}` : `#0${pokemon.id}` : `#${pokemon.id}`}
             </p>
             <div className="pokemon-imagen">
                 <img src={pokemonImage} alt={pokemon.name} />
